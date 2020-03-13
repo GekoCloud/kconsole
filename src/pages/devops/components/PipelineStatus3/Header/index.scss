@@ -1,0 +1,12 @@
+@import '~scss/variables';
+@import '~scss/mixins';
+
+.header {
+  display: flex;
+  margin-bottom: 16px;
+  padding: 3px;
+  height: 32px;
+  border-radius: 16.5px;
+  border: solid 1px $light-color07;
+  background-color: $light-color01;
+}

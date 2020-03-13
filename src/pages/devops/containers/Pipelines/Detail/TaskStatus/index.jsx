@@ -20,18 +20,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { observer } from 'mobx-react'
-import { reaction } from 'mobx'
+import { reaction, toJS } from 'mobx'
 import { get } from 'lodash'
-import {
-  addFullScreenChangeEvents,
-  removeFullScreenChangeEvents,
-  enterFullScreen,
-} from 'utils/dom'
 
 import { Modal, Button } from 'components/Base'
 import Status from 'devops/components/Status'
 import { getPipelineStatus } from 'utils/status'
-import PipelineContent from 'devops/components/PipelineStatus'
+import PipelineContent from 'devops/components/PipelineStatus3'
 
 import PipelineLog from '../PipelineLogDialog'
 import style from './index.scss'
@@ -77,12 +72,10 @@ export default class Pipeline extends React.Component {
 
   componentDidMount() {
     this.handleFetch()
-    addFullScreenChangeEvents(this.toggleFullScreenState)
   }
 
   componentWillUnmount() {
     this.updateReaction()
-    removeFullScreenChangeEvents(this.toggleFullScreenState)
   }
 
   static childContextTypes = {
@@ -106,16 +99,6 @@ export default class Pipeline extends React.Component {
       return
     }
     this.store.getNodesStatus(params)
-  }
-
-  toggleFullScreenState = () => {
-    const { isFullScreen } = this.state
-    this.setState({ isFullScreen: !isFullScreen })
-  }
-
-  handleEnterFullScreen = () => {
-    enterFullScreen(this.container)
-    this.setState({ isFullScreen: true })
   }
 
   showLog = () => {
@@ -154,17 +137,6 @@ export default class Pipeline extends React.Component {
     } finally {
       callBack && callBack()
     }
-  }
-
-  renderBtnGroup() {
-    return (
-      <div className={style.pipelineCard__btnGroup}>
-        <span onClick={this.handleEnterFullScreen}>
-          <Button icon="maximize" type="flat" />
-        </span>
-        <Button onClick={this.showLog}>{t('Show Logs')}</Button>
-      </div>
-    )
   }
 
   renderLoadingCard = () => (
@@ -216,12 +188,7 @@ export default class Pipeline extends React.Component {
               </Button>
             </div>
           </div>
-          <div
-            className={style.pipelineCard__main}
-            ref={dom => {
-              this.container = dom
-            }}
-          >
+          <div className={style.pipelineCard__main}>
             <pre>{runDetailLogs}</pre>
           </div>
         </div>
@@ -230,17 +197,10 @@ export default class Pipeline extends React.Component {
     return (
       <React.Fragment>
         <div className={style.pipelineCard}>
-          <div className={style.pipelineCard__toolbar}>
-            {this.renderBtnGroup()}
-          </div>
-          <div
-            className={style.pipelineCard__main}
-            ref={dom => {
-              this.container = dom
-            }}
-          >
-            <PipelineContent jsonData={nodesStatus} />
-          </div>
+          <PipelineContent
+            jsonData={toJS(nodesStatus)}
+            params={this.props.match.params}
+          />
         </div>
         <Modal
           width={1162}

@@ -25,12 +25,14 @@ const URL_PREFIX = 'kapis/devops.kubesphere.io/v1alpha2/devops/'
 
 export default class PipelineRunStore extends BaseStore {
   @observable stepLogData = {
+    isLoading: true,
     log: '',
     start: 0,
     hasMore: false,
   }
 
   async getStepLog({ project_id, name, branch, runid, nodeid, stepid }) {
+    this.stepLogData.isLoading = true
     const result = await request.defaults({
       url: `${URL_PREFIX}${project_id}/pipelines/${decodeURIComponent(name)}${
         branch ? `/branches/${encodeURIComponent(branch)}` : ''
@@ -44,6 +46,7 @@ export default class PipelineRunStore extends BaseStore {
     })
     const prevLog = this.stepLogData.log
     this.stepLogData = {
+      isLoading: false,
       log: prevLog + get(result, 'data', ''),
       start: result.headers.get('x-text-size'),
       hasMore: Boolean(result.headers.get('x-more-data')),

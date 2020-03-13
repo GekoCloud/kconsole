@@ -1,0 +1,90 @@
+@import '~scss/variables';
+@import '~scss/mixins';
+
+@mixin dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.dot-gray {
+  @include dot;
+  background-color: $light-color06;
+}
+
+.dot-green {
+  @include dot;
+  background-color: $green-color04;
+}
+
+.dot-deep {
+  @include dot;
+  background-color: #324558;
+}
+
+.stage{
+  padding: 0 20px;
+  height: 24px;
+  line-height: 20px;
+  border-radius: 12px;
+  border-width: 2px;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.active {
+  border-color: $dark-color07 !important;
+}
+
+.multiStage{
+  display: inline-flex;
+  padding: 0 2px;
+  box-sizing: content-box;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 12px;
+  border-color: transparent;
+  background-color: $light-color02;
+
+  .stage {
+    height: 20px;
+    min-width: 20px;
+    padding: 0px;
+    line-height: 18px;
+    border-width: 0px;
+    text-align: center;
+    transition: background-color 1s linear;
+  }
+  .active {
+    padding: 0 20px;
+  }
+}
+
+.queued {
+  @include TypographySymbolText();
+  border-radius: 12px;
+  background-color: $light-color02;
+  border-color: transparent;
+}
+
+.abort {
+  @include TypographySymbolText();
+  border-radius: 12px;
+  background-color: $light-color02;
+  border-color: transparent;
+}
+
+.success {
+  @include TypographySymbolText($white);
+  border-radius: 12px;
+  background-color: $green-color03;
+  border-color: $green-color05;
+}
+
+.skipped {
+  @include TypographySymbolText();
+  border-radius: 12px;
+  background-color: $light-color02;
+  border-color: transparent;
+}

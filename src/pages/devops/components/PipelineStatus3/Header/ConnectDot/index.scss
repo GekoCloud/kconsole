@@ -1,0 +1,37 @@
+@import '~scss/variables';
+@import '~scss/mixins';
+
+@mixin dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.gray {
+  span {
+    @include dot;
+    background-color: $light-color06;
+  }
+}
+
+.green {
+  span {
+    @include dot;
+    background-color: $green-color04;
+  }
+}
+
+.deep {
+  span {
+    @include dot;
+    background-color: #324558;
+  }
+}
+
+.connect {
+  margin-left: 4px;
+  span {
+    margin-right: 4px;
+  }
+}
