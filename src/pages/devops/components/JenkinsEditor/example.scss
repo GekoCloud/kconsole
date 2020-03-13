@@ -1,0 +1,152 @@
+@import '~scss/variables';
+@import '~scss/mixins';
+
+.exampleContainer {
+  height: calc(100% - 40px);
+  width: 60%;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(36, 46, 66, 0.2);
+  background-color: #ffffff;
+  transition: 0.5s transform ease;
+  .header {
+    display: flex;
+    padding: 12px 22px;
+  }
+  
+  .taskIcon {
+    flex-basis: 40px;
+    min-width: 40px;
+    line-height: 38px;
+  }
+
+  .collapsIcon {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background-color: $light-color-02;
+    cursor: pointer;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  .taskInfo {
+    flex-grow: 1;
+  }
+  
+  .taskName {
+    height: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: $dark-color-07;
+  }
+  
+  .desc {
+    word-break: break-all;
+    @include TypographyParagraphSeconfary;
+  }
+  
+  .title {
+    display: flex;
+    height: 64px;
+    padding-left: 22px;
+    box-shadow: 0 -1px 0 0 $light-color-07;
+    background-color: $light-color-02;
+    .header {
+      width: 170px;
+      background-color: #ffffff;
+    }
+  }
+}
+
+.show {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.hide {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transform: translateX(940px);
+}
+
+.content {
+  background-color: #ffffff;
+  height: calc(100% - 128px);
+  padding: 20px;
+  overflow: auto;
+  p {
+    height: 20px;
+    margin-bottom: 8px;
+    @include TypographyParagraphPrimary;
+  }
+  pre {
+    padding: 12px;
+    border-radius: 4px;
+    border: solid 1px $light-color-06;
+    background-color: $light-color-01;
+    white-space: pre-wrap;
+    tab-size: 2em;
+  }
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 4px;
+    border: solid 1px $light-color-06;
+    background-color: #ffffff;
+    tr {
+      height: 40px;
+      line-height: 40px;
+      text-indent: 20px;
+    }
+    tbody {
+      tr {
+        & > :first-child {
+          font-family: Monaco;
+          font-size: 12px;
+          color: #4a363c;
+        }
+        & > :nth-child(2) {
+          @include TypographyParagraphPrimary;
+          line-height: 40px;
+          font-size: 14px;
+        }
+        & > :last-child {
+          @include TypographyParagraphSeconfary;
+          line-height: 40px;
+          font-size: 14px;
+        }
+        pre {
+          padding: 8px;
+          font-size: 10px;
+        }
+      }
+      & > :nth-child(odd) {
+        background-color: $light-color-01;
+      }
+    }
+  }
+  .name {
+    height: 28px;
+    text-shadow: 0 4px 8px rgba(36, 46, 66, 0.1);
+    font-size: 20px;
+    font-weight: 600;
+    color: $dark-color-07;
+  }
+  .desc {
+    font-size: 12px;
+    color: #657d95;
+  }
+  .itemTitle {
+    margin-top: 20px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: $dark-color-07;
+  }
+}
