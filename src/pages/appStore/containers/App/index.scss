@@ -24,7 +24,7 @@ $toolbar-height: 52px;
     .back {
       margin-bottom: 12px;
       a {
-        color: #fff;
+        color: $white;
         transition: all $trans-speed ease;
       }
       svg {
@@ -50,7 +50,7 @@ $toolbar-height: 52px;
       .text {
         float: left;
         width: calc(100% - 70px);
-        color: #fff;
+        color: $white;
 
         > h3 {
           font-size: $size-mid-large;

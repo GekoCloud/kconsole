@@ -34,7 +34,7 @@
     padding: 20px;
     font-size: 12px;
     line-height: 1.67;
-    color: #ffffff;
+    color: $white;
     border-radius: 4px;
     background-color: #242e42;
     white-space: pre-wrap;
@@ -82,7 +82,7 @@
   text-align: center;
   border-radius: $border-radius;
   min-height: 212px;
-  background-color: #ffffff;
+  background-color: $white;
   box-shadow: 0 4px 8px 0 rgba(36, 46, 66, 0.06);
 
   .icon {

@@ -12,7 +12,7 @@
   background-color: $dark-color07;
  
   .title {
-    @include TypographySymbolText(#fff);
+    @include TypographySymbolText($white);
 
     & > span {
       display: inline-block;

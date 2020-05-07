@@ -45,7 +45,7 @@
       background: transparent;
       outline: none;
       border: none;
-      color: #fff;
+      color: $white;
     }
   }
 }
@@ -75,7 +75,7 @@
     }
     .select-value-label,
     .select-value{
-      color: #fff !important;
+      color: $white !important;
     }
     .select-menu{
       padding: 0;

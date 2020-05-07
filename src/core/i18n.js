@@ -25,6 +25,7 @@ import { getBrowserLang } from 'utils'
 import locales from '../locales'
 
 const init = () => {
+  const supportLangs = globals.config.supportLangs.map(lang => lang.value)
   const defaultLang = get(globals.user, 'lang')
   if (defaultLang && cookie('lang') !== defaultLang) {
     cookie('lang', defaultLang)
@@ -32,7 +33,7 @@ const init = () => {
 
   let lang = cookie('lang') || getBrowserLang()
 
-  if (!locales[lang]) {
+  if (!supportLangs.includes(lang)) {
     lang = 'en'
     cookie('lang', lang)
   }

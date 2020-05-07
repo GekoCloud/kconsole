@@ -22,11 +22,11 @@
 
 .text {
   & > div {
-    @include TypographyTitleH6(#fff);
+    @include TypographyTitleH6($white);
   }
 
   & > p {
-    @include TypographyParagraph(#fff);
+    @include TypographyParagraph($white);
   }
 }
 

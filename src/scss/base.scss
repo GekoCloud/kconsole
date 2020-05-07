@@ -114,12 +114,12 @@ pre {
 
 ::-moz-selection {
   background: #369a6a;
-  color: #fff;
+  color: $white;
 }
 
 ::selection {
   background: #369a6a;
-  color: #fff;
+  color: $white;
 }
 
 .icon-notification {
@@ -257,8 +257,8 @@ pre {
     display: inline-block;
     padding: 3px 6px;
     border-radius: 2px;
-    background: #000;
-    color: #fff;
+    background: $dark;
+    color: $white;
     white-space: nowrap;
     z-index: 100;
   }

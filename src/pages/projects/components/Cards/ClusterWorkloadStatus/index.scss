@@ -11,7 +11,7 @@
   height: 108px;
   padding: 8px;
   margin-right: 12px;
-  color: #fff;
+  color: $white;
   background-image: url('/assets/cluster-card-bg.svg');
 }
 
@@ -26,11 +26,11 @@
 
 .text {
   & > div {
-    @include TypographyTitleH6(#fff);
+    @include TypographyTitleH6($white);
   }
 
   & > p {
-    @include TypographyParagraph(#fff);
+    @include TypographyParagraph($white);
   }
 }
 
@@ -47,11 +47,11 @@
 
 .replicas {
   margin-right: 12px;
-  @include TypographySymbolText(#fff);
+  @include TypographySymbolText($white);
 
   span {
     &:first-of-type {
-      @include TypographyTitleH2(#fff);
+      @include TypographyTitleH2($white);
       line-height: 40px;
     }
   }

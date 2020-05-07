@@ -13,7 +13,7 @@
       width: 121px;
       height: 26px;
       color: #36435c;
-      background: #fff;
+      background: $white;
       font-size: $size-small;
       line-height: 20px;
       border-radius: 13.5px;
@@ -21,7 +21,7 @@
       padding: 3px 0;
 
       &.active {
-        color: #fff;
+        color: $white;
         background: #242e42;
       }
     }
@@ -31,7 +31,7 @@
     max-width: 1055px;
     border-radius: 8px;
     //box-shadow: 0 4px 8px 0 rgba(36, 46, 66, 0.06);
-    background-color: #ffffff;
+    background-color: $white;
     //padding: 20px;
     margin-bottom: 12px;
 

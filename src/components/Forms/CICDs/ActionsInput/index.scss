@@ -18,7 +18,7 @@
 .itemWrapper {
   padding: 10px 12px 20px 12px;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: $white;
   border: solid 1px $light-color03;
 
   & + .itemWrapper {

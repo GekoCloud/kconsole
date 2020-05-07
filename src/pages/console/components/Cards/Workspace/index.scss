@@ -3,7 +3,7 @@
 .wrapper {
   position: relative;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: $white;
   box-shadow: 0 4px 8px 0 rgba(36, 46, 66, 0.06);
   transition: all $trans-speed ease-in-out;
 
@@ -73,7 +73,7 @@
   img {
     display: inline-block;
     vertical-align: middle;
-    border: 1px solid #ffffff;
+    border: 1px solid $white;
     border-radius: 50%;
 
     & + img {
@@ -87,7 +87,7 @@
     width: 30px;
     height: 30px;
     vertical-align: middle;
-    border: 1px solid #ffffff;
+    border: 1px solid $white;
     border-radius: 50%;
     margin-left: -4px;
     background-color: $bg-color;

@@ -7,7 +7,7 @@
   padding: 12px 20px;
   height: 64px;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: $white;
   border: solid 1px transparent;
   margin-bottom: 8px;
   transition: all $trans-speed ease-in-out;
@@ -134,7 +134,7 @@
 .card {
   padding: 12px;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: $white;
   border: solid 1px $light-color03;
   @include clearfix;
 }

@@ -10,7 +10,7 @@
 .formAttrs {
   border-radius: $border-radius;
   box-shadow: 0 4px 8px 0 rgba(36, 46, 66, 0.06);
-  background-color: #ffffff;
+  background-color: $white;
   border: solid 1px $light-color03;
   padding: 12px;
   :global {
@@ -61,7 +61,7 @@
     .protocolSelected {
       border-radius: 16px;
       background-color: #36435c;
-      color: #fff;
+      color: $white;
     }
     .protocolDisabled {
       cursor: not-allowed;

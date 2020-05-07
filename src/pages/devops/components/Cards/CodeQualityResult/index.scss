@@ -17,7 +17,7 @@
     line-height: 24px;
     font-size: 16px;
     font-weight: 600;
-    color: #ffffff;
+    color: $white;
   }
 }
 
@@ -38,7 +38,7 @@
   height: 96px;
   border-radius: 4px;
   border: solid 1px $light-color03;
-  background-color: #ffffff;
+  background-color: $white;
   padding: 22px 20px;
 
   .title {
@@ -85,7 +85,7 @@
 .B {
   font-size: 12px;
   font-weight: bold;
-  color: #ffffff;
+  color: $white;
   display: inline-block;
   line-height: 14px;
   margin-left: 4px;
@@ -101,7 +101,7 @@
 .D {
   font-size: 12px;
   font-weight: bold;
-  color: #ffffff;
+  color: $white;
   display: inline-block;
   line-height: 14px;
   text-align: center;

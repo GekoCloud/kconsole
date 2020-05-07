@@ -42,7 +42,7 @@
       border: 1px solid #404e68;
 
       p {
-        color: #fff;
+        color: $white;
       }
     }
 
@@ -81,7 +81,7 @@
           bottom: 0;
           border-radius: 1px;
           z-index: 3;
-          color: #fff;
+          color: $white;
           background-color: $yellow-color03;
           line-height: 8px;
           font-size: 6px;

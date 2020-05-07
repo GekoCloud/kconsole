@@ -18,12 +18,12 @@
 .title {
   position: relative;
   padding: 30px 40px;
-  color: #ffffff;
+  color: $white;
   overflow: hidden;
 
   :global {
     .h4 {
-      color: #ffffff;
+      color: $white;
       line-height: 1.4;
       text-shadow: 0 4px 8px rgba(36, 46, 66, 0.1);
     }
@@ -51,7 +51,7 @@
 
 .toolbar {
   padding: 8px 20px;
-  background-color: #fff;
+  background-color: $white;
 
   :global {
     .radio-default label.radio-button {
@@ -66,7 +66,7 @@
       height: 20px;
       min-width: 32px;
       border-radius: 10px;
-      color: #ffffff !important;
+      color: $white !important;
       border: none !important;
       box-shadow: 0 2px 4px 0 rgba(85, 188, 138, 0.36);
     }

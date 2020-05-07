@@ -1,12 +1,12 @@
 @import '~scss/variables';
 
 .wrapper {
-  width: 100%
+  width: 100%;
 
   :global {
     .recharts-cartesian-grid-horizontal {
       line {
-        stroke-dasharray: 3
+        stroke-dasharray: 3;
       }
     }
     .recharts-cartesian-axis-line {

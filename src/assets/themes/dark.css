@@ -1,0 +1,20 @@
+:root {
+  --light-color01: #79879c;
+  --light-color02: #6b7b95;
+  --light-color03: #5f708a;
+  --light-color04: #4a5974;
+  --light-color05: #404e68;
+  --light-color06: #36435c;
+  --light-color07: #242e42;
+  --light-color08: #181d28;
+  --dark-color01: #f9fbfd;
+  --dark-color02: #eff4f9;
+  --dark-color03: #e3e9ef;
+  --dark-color04: #d8dee5;
+  --dark-color05: #d1d7df;
+  --dark-color06: #ccd3db;
+  --dark-color07: #c1c9d1;
+  --dark-color08: #abb4be;
+  --black: #ffffff;
+  --white: #000000;
+}

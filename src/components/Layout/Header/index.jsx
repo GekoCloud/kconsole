@@ -22,13 +22,14 @@ import classnames from 'classnames'
 import { Link } from 'react-router-dom'
 import { Icon, Menu, Dropdown } from '@pitrix/lego-ui'
 import { isAppsPage } from 'utils'
+import theme from 'core/theme'
 
 import { Button } from 'components/Base'
 import LoginInfo from '../LoginInfo'
 
 import styles from './index.scss'
 
-class Header extends React.Component {
+export default class Header extends React.Component {
   static propTypes = {
     className: PropTypes.string,
     innerRef: PropTypes.object,
@@ -124,11 +125,10 @@ class Header extends React.Component {
               <Button type="flat" icon="documentation" />
             </Dropdown>
           )}
+          <Button type="flat" icon="vnc" onClick={() => theme.switchTheme()} />
           <LoginInfo className={styles.loginInfo} isAppsPage={isAppsPage()} />
         </div>
       </div>
     )
   }
 }
-
-export default Header

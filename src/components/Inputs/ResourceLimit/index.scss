@@ -40,7 +40,7 @@
   height: 20px;
   border-radius: 50%;
   border: 1px solid $primary;
-  background-color: #fff;
+  background-color: $white;
   box-shadow: 0 4px 8px 0 rgba(85, 188, 138, 0.36);
   transition: box-shadow $trans-speed ease-in-out;
   cursor: pointer;

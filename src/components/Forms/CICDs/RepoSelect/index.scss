@@ -4,7 +4,7 @@
 .empty {
   height: 96px;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: $white;
   border: solid 1px $light-color03;
 }
 
@@ -75,7 +75,7 @@
 
     &.selectType {
       background-color: #242e42;
-      color: #ffffff;
+      color: $white;
     }
   }
 }
@@ -104,7 +104,7 @@
   padding: 12px 20px;
   height: 64px;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: $white;
   border: solid 1px transparent;
   margin-bottom: 8px;
   transition: all $trans-speed ease-in-out;

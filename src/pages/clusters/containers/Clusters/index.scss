@@ -46,7 +46,7 @@
   border-radius: 10px;
   background-color: #abb4be;
   font-weight: 500;
-  color: #ffffff;
+  color: $white;
 }
 
 .noData {
@@ -54,7 +54,7 @@
   border-radius: $border-radius;
   padding: 32px 0;
   box-shadow: 0 4px 8px 0 rgba(36, 46, 66, 0.06);
-  background-color: #ffffff;
+  background-color: $white;
   text-align: center;
 
   p {

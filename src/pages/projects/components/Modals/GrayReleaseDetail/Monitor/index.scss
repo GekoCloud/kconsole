@@ -73,10 +73,10 @@
       background-color: #329dce;
 
       .tag {
-        color: #fff;
+        color: $white;
 
         &::before {
-          background-color: #ffffff;
+          background-color: $white;
         }
 
         & + .tag {
@@ -87,7 +87,7 @@
       }
 
       .title {
-        color: #fff;
+        color: $white;
       }
     }
   }

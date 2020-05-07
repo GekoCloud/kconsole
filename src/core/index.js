@@ -32,6 +32,7 @@ import RootStore from 'stores/root'
 import App from './App'
 import GlobalValue from './global'
 import i18n from './i18n'
+import theme from './theme'
 
 require('@babel/polyfill')
 require('utils/polyfills')
@@ -55,6 +56,8 @@ window.onunhandledrejection = function(e) {
     }
   }
 }
+
+theme.init()
 
 window.t = i18n.t
 window.request = request

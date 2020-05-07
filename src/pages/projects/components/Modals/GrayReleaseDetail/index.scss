@@ -105,7 +105,7 @@
   padding: 12px;
   border-radius: 4px;
   border: solid 1px $light-color03;
-  background-color: #ffffff;
+  background-color: $white;
 
   ul {
     li {
@@ -168,7 +168,7 @@
   padding: 4px;
   border-radius: 4px;
   border: solid 1px $light-color03;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .bar {
@@ -176,7 +176,7 @@
   border-radius: 2px;
   background-color: #329dce;
   text-align: center;
-  color: #ffffff;
+  color: $white;
   font-weight: $font-bold;
 }
 

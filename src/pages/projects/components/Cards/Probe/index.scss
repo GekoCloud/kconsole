@@ -11,7 +11,7 @@
   padding: 12px 16px;
   border-radius: $border-radius;
   border: 1px solid $border-color;
-  background-color: #fff;
+  background-color: $white;
 
   & + .probeItem {
     margin-top: 8px;

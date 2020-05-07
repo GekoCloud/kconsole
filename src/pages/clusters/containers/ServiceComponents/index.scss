@@ -5,7 +5,7 @@
   margin-bottom: 20px;
   border-radius: $border-radius;
   overflow: hidden;
-  background-color: #fff;
+  background-color: $white;
   box-shadow: 0 4px 8px 0 rgba(36, 46, 66, 0.06);
 }
 
@@ -59,7 +59,7 @@
       height: 20px;
       min-width: 32px;
       border-radius: 10px;
-      color: #ffffff !important;
+      color: $white !important;
       border: none !important;
       box-shadow: 0 2px 4px 0 rgba(85, 188, 138, 0.36);
     }

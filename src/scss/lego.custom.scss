@@ -18,7 +18,7 @@
     margin-bottom: 2px;
 
     .qicon {
-      color: #fff;
+      color: $white;
       fill: #f5a623;
     }
   }
@@ -381,8 +381,8 @@ label.checkbox {
 
     &-icon {
       .qicon-dark {
-        color: #fff;
-        fill: #fff;
+        color: $white;
+        fill: $white;
       }
     }
   }
@@ -489,7 +489,7 @@ label.checkbox {
 // table
 .table {
   font-size: $body-size;
-  background-color: #ffffff;
+  background-color: $white;
 
   table {
     padding: 0 12px 12px;
@@ -532,7 +532,7 @@ label.checkbox {
   transition: all $trans-speed ease-in-out;
 
   &.has-value {
-    background-color: #fff;
+    background-color: $white;
     border: solid 1px $dark-color01;
 
     & > .icon.is-right {
@@ -595,7 +595,7 @@ label.checkbox {
   .table-filter-input.tags .tag {
     height: 28px;
     font-size: $body-size;
-    color: #fff !important;
+    color: $white !important;
     background-color: $dark !important;
 
     &.is-rounded,
@@ -605,11 +605,11 @@ label.checkbox {
     }
 
     & > strong {
-      color: #fff !important;
+      color: $white !important;
     }
 
     .qicon-dark {
-      color: #ffffff;
+      color: $white;
       fill: #324558;
     }
   }
@@ -706,7 +706,7 @@ label.checkbox:before {
 
     &.checked {
       background-color: #36435c;
-      color: #ffffff;
+      color: $white;
     }
   }
 
@@ -832,7 +832,7 @@ label.checkbox:before {
 
   .collapse-item-label {
     font-weight: 600;
-    color: #fff;
+    color: $white;
     box-shadow: 0 1px 0 0 #36435c, 0 -1px 0 0 #36435c;
     background-color: #242e42;
     border: none !important;
@@ -864,7 +864,7 @@ label.checkbox:before {
   text-shadow: 0 2px 4px rgba(36, 46, 66, 0.1);
   font-weight: 500;
   line-height: 1.33;
-  color: #fff;
+  color: $white;
   cursor: default;
 
   &-disable {

@@ -18,18 +18,18 @@
 
   &.checked {
     background-color: $dark-color07;
-    color: #fff;
+    color: $white;
 
     :global {
       .checkbox {
-        color: #fff;
+        color: $white;
       }
     }
 
     .replicas {
       background-color: $dark-color06;
       .value {
-        color: #fff;
+        color: $white;
       }
     }
   }

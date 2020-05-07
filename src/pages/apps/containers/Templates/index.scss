@@ -17,12 +17,12 @@
   position: relative;
   padding: 30px 40px;
   background-color: #329dce;
-  color: #ffffff;
+  color: $white;
   overflow: hidden;
 
   :global {
     .h4 {
-      color: #ffffff;
+      color: $white;
       line-height: 1.4;
       text-shadow: 0 4px 8px rgba(36, 46, 66, 0.1);
     }
@@ -50,7 +50,7 @@
 
 .toolbar {
   padding: 8px 20px;
-  background-color: #fff;
+  background-color: $white;
 }
 
 .appsWrapper {
@@ -100,7 +100,7 @@
   border-radius: $border-radius;
   padding: 32px 0;
   box-shadow: 0 4px 8px 0 rgba(36, 46, 66, 0.06);
-  background-color: #ffffff;
+  background-color: $white;
   text-align: center;
 
   p {

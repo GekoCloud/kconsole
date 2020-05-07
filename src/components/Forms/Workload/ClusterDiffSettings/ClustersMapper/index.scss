@@ -8,7 +8,7 @@
   cursor: pointer;
  
   .title {
-    @include TypographySymbolText(#fff);
+    @include TypographySymbolText($white);
 
     & > span {
       display: inline-block;

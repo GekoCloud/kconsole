@@ -19,7 +19,7 @@
   padding: 20px 12px 12px;
   border-radius: $border-radius;
   box-shadow: 0 4px 8px 0 rgba(36, 46, 66, 0.06);
-  background-color: #fff;
+  background-color: $white;
 }
 
 .detail {
@@ -78,7 +78,7 @@
     text-shadow: 0 2px 4px rgba(36, 46, 66, 0.1);
     font-weight: $font-bold;
     line-height: 16px;
-    color: #fff;
+    color: $white;
   }
 }
 
@@ -90,7 +90,7 @@
   padding: 4px 12px;
   font-weight: $font-bold;
   line-height: 1.67;
-  color: #fff;
+  color: $white;
   border-radius: 16px;
   background-color: #242e42;
   transform: translateX(-50%);

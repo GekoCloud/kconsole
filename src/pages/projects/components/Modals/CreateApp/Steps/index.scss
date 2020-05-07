@@ -8,7 +8,7 @@
   background-color: $dark-color07;
 
   & > div {
-    @include TypographySymbolText(#fff);
+    @include TypographySymbolText($white);
 
     & + div {
       position: relative;

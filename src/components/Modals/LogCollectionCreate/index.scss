@@ -14,7 +14,7 @@
       margin: 8px;
       border: solid 1px $light-color03;
       border-radius: 4px;
-      background-color: #ffffff;
+      background-color: $white;
       display: grid;
       grid-template-columns: 40px 1fr;
       grid-gap: 20px;
@@ -46,7 +46,7 @@
   &:before {
     content: '?';
     border-radius: 50%;
-    color: #fff;
+    color: $white;
     background: #3391bf;
     display: inline-block;
     margin-right: 0.5em;

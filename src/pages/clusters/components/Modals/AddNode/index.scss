@@ -9,7 +9,7 @@
 
 .step {
   padding: 12px;
-  background-color: #fff;
+  background-color: $white;
   border: 1px solid $border-color;
   border-radius: $border-radius;
 
@@ -26,7 +26,7 @@
 
     code {
       font-family: Monaco;
-      color: #fff;
+      color: $white;
       line-height: 2;
     }
   }

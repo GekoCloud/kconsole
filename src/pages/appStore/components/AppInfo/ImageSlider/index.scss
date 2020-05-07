@@ -98,7 +98,7 @@ $N75: #8c96ad;
     float: left;
     width: $picture-width + $picture-margin;
     height: $picture-height;
-    background-color: #fff;
+    background-color: $white;
 
     .picture {
       display: flex;
@@ -121,7 +121,7 @@ $N75: #8c96ad;
   right: 0;
   top: 0;
   z-index: 201;
-  background-color: rgba(#000, 0.8);
+  background-color: rgba($dark, 0.8);
 
   .viewCont {
     position: relative;

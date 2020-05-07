@@ -10,7 +10,7 @@
     border-radius: 2px;
     background-color: $dark-color06;
 
-    @include TypographyParagraph(#fff);
+    @include TypographyParagraph($white);
   }
 
   &.selected > div:first-child {

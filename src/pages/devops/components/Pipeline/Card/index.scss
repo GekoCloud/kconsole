@@ -20,7 +20,7 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 32px;
-  color: #ffffff;
+  color: $white;
 
   border-radius: 16px;
   background-color: #242e42;
@@ -36,7 +36,7 @@
   padding: 22px 12px 20px;
   text-align: left;
   border-radius: $border-radius;
-  background-color: #ffffff;
+  background-color: $white;
   box-shadow: 0 4px 8px 0 rgba(36, 46, 66, 0.06);
   border: 1px solid transparent;
 }
@@ -90,7 +90,7 @@
   height: 32px;
   border-radius: 4px;
   padding: 5px;
-  background-color: #ffffff;
+  background-color: $white;
   border: dashed 1px #d8dee5;
   user-select: none;
   cursor: pointer;
@@ -113,7 +113,7 @@
   line-height: 32px;
   color: #5f708a;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: $white;
   border: dashed 1px #d8dee5;
   user-select: none;
   .icon {

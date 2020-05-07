@@ -28,11 +28,11 @@
 
 .title {
   padding: 30px 40px;
-  color: #ffffff;
+  color: $white;
 
   :global {
     .h4 {
-      color: #ffffff;
+      color: $white;
       line-height: 1.4;
       text-shadow: 0 4px 8px rgba(36, 46, 66, 0.1);
     }
@@ -47,7 +47,7 @@
 .toolbar {
   position: relative;
   padding: 8px 20px;
-  background-color: #fff;
+  background-color: $white;
   z-index: 1;
 }
 

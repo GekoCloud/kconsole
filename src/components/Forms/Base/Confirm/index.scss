@@ -17,7 +17,7 @@
   margin-right: 12px;
   transition: all $trans-speed ease-in-out;
   cursor: pointer;
-  color: #fff;
+  color: $white;
 
   &:hover {
     background-color: $dark-color06;
